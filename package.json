@@ -1,0 +1,43 @@
+{
+  "name": "depin",
+  "version": "0.0.1",
+  "description": "A simple dependency injection container.",
+  "keywords": [
+    "di",
+    "dependency",
+    "injection"
+  ],
+  "homepage": "https://github.com/Moeriki/depin",
+  "repository": "git@github.com:Moeriki/depin.git",
+  "bugs": "https://github.com/Moeriki/depin/issues",
+  "author": "Dieter Luypaert <dieterluypaert@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "precommit": "lint-staged",
+    "prepush": "npm test"
+  },
+  "dependencies": {
+    "fn-args": "~3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "~4.8.0",
+    "eslint-config-muriki": "~9.1.0",
+    "eslint-plugin-import": "~2.7.0",
+    "eslint-plugin-jasmine": "~2.9.1",
+    "eslint-plugin-node": "~5.2.0",
+    "husky": "~0.14.3",
+    "jest": "~21.2.1",
+    "lint-staged": "~4.2.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  }
+}

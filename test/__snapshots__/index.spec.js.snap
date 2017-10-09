@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`depin register should throw if provider is anonymous function 1`] = `"Cannot register anonymous provider. Either name your provider, or pass a name argument while registering."`;
+
+exports[`depin set should throw if key is invalid 1`] = `"Expected value key to be of type 'string'. Instead received 'boolean'."`;
+
+exports[`depin set should throw if key is invalid 2`] = `"Expected value key to be of type 'string'. Instead received 'number'."`;

@@ -1,0 +1,23 @@
+language: "node_js"
+
+node_js:
+  - "6"
+  - "8"
+
+install:
+  - "npm install"
+  - "npm install -D coveralls"
+
+script:
+  - "npm run test:coverage"
+
+after_success:
+  - "cat ./coverage/lcov.info | coveralls"
+
+notifications:
+  email: false
+  slack:
+    rooms:
+      - moeriki:Gqf2TnMQj95R0y9cNLQhw6Eo#updates
+    on_success: change
+    on_failure: always
